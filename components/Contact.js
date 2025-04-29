@@ -187,7 +187,7 @@ const ContactForm = () => {
 
       {/* Info Message */}
       <p className="text-center text-gray-600 text-sm mt-4">
-        We'll never share your personal information with anyone else.
+        We&apos;ll never share your personal information with anyone else.
       </p>
 
       {/* Success & Failure Messages */}
