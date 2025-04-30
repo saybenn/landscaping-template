@@ -4,13 +4,13 @@ import { siteConfig } from "../siteConfig";
 export default function Hero() {
   const { heading, subheading, backgroundImage } = siteConfig.hero;
   return (
-    <section className="relative w-full lg:h-[85vh] md:h-[50vh] flex items-center justify-center bg-black text-white overflow-hidden">
+    <section className="relative w-full lg:h-[85vh] md:h-[50vh] h-[75vh] flex items-center justify-center bg-black text-white overflow-hidden">
       <Image
         src={backgroundImage}
         alt="Landscaping hero background"
         fill
         className="object-cover opacity-70"
-        loading="lazy"
+        priority
         sizes="(max-width: 768px) 100vw, 33vw"
       />
       <div className="relative z-10 text-center px-6 max-w-3xl">

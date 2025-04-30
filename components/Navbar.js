@@ -41,13 +41,16 @@ export default function Navbar() {
           : "-translate-y-full"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between font-inter">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between gap-2 font-inter">
         {/* Logo */}
         <Link
           href="/"
-          className="text-2xl md:text-2xl font-bold text-[var(--color-surface)] whitespace-normal break-words max-w-[8rem] sm:max-w-none"
+          className="text-xl font-bold text-[var(--color-surface)] whitespace-nowrap overflow-hidden text-ellipsis max-w-[10rem] sm:max-w-none"
         >
-          {siteConfig.name}
+          <>
+            <span className="block sm:hidden">Evergreen</span>
+            <span className="hidden sm:block">{siteConfig.name}</span>
+          </>
         </Link>
 
         {/* Desktop Navigation */}
